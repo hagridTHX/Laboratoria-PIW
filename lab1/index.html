@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabula Ludum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabula Ludum</h1>
+        <nav>
+            <a href="index2.html" class="nav-btn">Dodaj nową pozycję</a>
+            <a href="#" class="nav-btn">Zaloguj się</a>
+            <a href="#" class="nav-btn">Koszyk</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="filters">
+            <h2>Wyszukaj i filtruj</h2>
+            
+            <form action="#" class="filter-form">
+                <div class="filter-group">
+                    <label for="search">Szukaj w opisie/tytule:</label>
+                    <input type="text" id="search" placeholder="np. pociągi, smoki">
+                </div>
+
+                <div class="filter-group">
+                    <label for="category">Rodzaj gry:</label>
+                    <select id="category">
+                        <option value="all">Wszystkie</option>
+                        <option value="strategy">Strategiczne</option>
+                        <option value="family">Rodzinne</option>
+                        <option value="party">Imprezowe</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="players">Ilość graczy:</label>
+                    <input type="number" id="players" min="1" max="10" placeholder="np. 4">
+                </div>
+
+                <button type="submit" class="filter-btn">Filtruj</button>
+            </form>
+        </aside>
+
+        <section class="games-list">
+            <h2>Dostępne gry</h2>
+            
+            <div class="games-grid">
+                
+                <article class="game-card">
+                    <img src="https://via.placeholder.com/200x200" alt="Okładka gry">
+                    <h3>Gra 1</h3>
+                    <p class="price">999999 zł</p>
+                    <p class="desc">opis gry </p>
+                    <button>Do koszyka</button>
+                </article>
+
+                <article class="game-card">
+                    <img src="https://via.placeholder.com/200x200" alt="Okładka gry">
+                    <h3>Gra 2</h3>
+                    <p class="price">52477865275 zł</p>
+                    <p class="desc">opis gry</p>
+                    <button>Do koszyka</button>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

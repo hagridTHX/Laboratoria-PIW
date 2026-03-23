@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj grę</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tabula Ludum</h1>
+        <nav>
+            <a href="index.html" class="nav-btn">Powrót do sklepu</a>
+        </nav>
+    </header>
+
+    <main class="subpage-main">
+        <section class="add-game-section">
+            <h2>Dodaj nową planszówkę</h2>
+            
+            <form action="#" class="add-form">
+                <div class="form-group">
+                    <label for="new-title">Tytuł gry:</label>
+                    <input type="text" id="new-title" placeholder="Wpisz tytuł..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-price">Cena (zł):</label>
+                    <input type="number" id="new-price" placeholder="np. 120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-category">Kategoria:</label>
+                    <select id="new-category">
+                        <option value="strategy">Strategiczna</option>
+                        <option value="family">Rodzinna</option>
+                        <option value="party">Imprezowa</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-desc">Opis gry:</label>
+                    <textarea id="new-desc" rows="5" placeholder="Napisz coś o tej grze..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Dodaj do bazy</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
