@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Moje Zadania</h1>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Szukaj zadania...">
+            <label>
+                <input type="checkbox" id="case-sensitive-cb"> Włącz wielkość liter (Case-sensitive)
+            </label>
+        </div>
+
+        <div class="add-task-box">
+            <input type="text" id="new-task-input" placeholder="Co jest do zrobienia?">
+            <select id="list-selector">
+                <option value="list-normal">Mało pilne</option>
+                <option value="list-urgent">Pilne</option>
+                <option value="list-yesterday">Bardzo pilne</option>
+            </select>
+            <button id="add-btn">Dodaj</button>
+        </div>
+
+        <button id="undo-btn" class="hidden">Cofnij usunięcie</button>
+
+        <div id="lists-container">
+            </div>
+    </div>
+
+    <div id="delete-modal" class="modal hidden">
+        <div class="modal-content">
+            <p id="modal-text">Czy na pewno chcesz usunąć to zadanie?</p>
+            <div class="modal-buttons">
+                <button id="modal-yes" class="btn-danger">Tak, usuń</button>
+                <button id="modal-no">Anuluj</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
