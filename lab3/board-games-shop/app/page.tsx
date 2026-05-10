@@ -13,7 +13,7 @@ export default async function Home() {
 
     return (
         <main className="p-8">
-            <h1 className="text-3xl font-bold mb-6">Sklep z Planszówkami</h1>
+            <h1 className="text-3xl font-bold mb-6">Tabula Ludum</h1>
 
             <GamesList initialGames={games} />
 
